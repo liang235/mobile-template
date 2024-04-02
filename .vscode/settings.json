@@ -1,0 +1,17 @@
+{
+	// eslint 开启自动修复
+	"editor.codeActionsOnSave": {
+		"source.fixAll": "explicit",
+		"source.fixAll.eslint": "explicit",
+		"source.fixAll.stylelint": "explicit"
+	},
+	// 是否自动格式化
+	"editor.formatOnSave": true,
+	"prettier.enable": true,
+	"stylelint.validate": ["css", "scss", "vue"],
+	"vue.codeActions.enabled": false,
+	"css.lint.unknownAtRules": "ignore",
+	"scss.lint.unknownAtRules": "ignore",
+	"eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "html", "markdown", "json", "jsonc", "yaml"],
+	"eslint.experimental.useFlatConfig": true
+}
