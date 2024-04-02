@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 // 路由相关数据
 import { constantRoutes } from './routes'
 
@@ -54,7 +54,7 @@ const routes = [
  * @link 参考：https://next.router.vuejs.org/zh/api/#createrouter
  */
 const router = createRouter({
-	history: createWebHistory(),
+	history: createWebHashHistory(),
 	routes: [...constantRoutes, ...routes],
 })
 
