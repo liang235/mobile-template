@@ -25,7 +25,7 @@ export default async ({ mode, command }) => {
 			port: 8888,
 			proxy: {
 				'/proxy': {
-					target: env.VITE_APP_API_BASEURL,
+					target: env.VITE_API_URL,
 					changeOrigin: true,
 					rewrite: (path) => path.replace(/\/proxy/, ''),
 				},

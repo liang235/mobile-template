@@ -8,4 +8,12 @@ export default {
 			method: 'post',
 		})
 	},
+
+	// 获取系统变量
+	getVars() {
+		return request({
+			url: '/SY_COMM_CONFIG.getVars.do',
+			method: 'post',
+		})
+	},
 }
