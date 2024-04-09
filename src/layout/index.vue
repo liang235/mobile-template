@@ -6,7 +6,9 @@ defineOptions({
 
 <template>
 	<NavBar />
-	<router-view />
+	<div class="main-container">
+		<router-view></router-view>
+	</div>
 	<Tabbar />
 </template>
 

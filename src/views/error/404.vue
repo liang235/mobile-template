@@ -1,11 +1,11 @@
 <script setup>
 defineOptions({
-	name: 'my',
+	name: '404',
 })
 </script>
 
 <template>
-	<div>my</div>
+	<div>404</div>
 </template>
 
 <style lang="scss" scoped></style>

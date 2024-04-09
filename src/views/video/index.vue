@@ -4,6 +4,8 @@ defineOptions({
 })
 </script>
 
-<template>video</template>
+<template>
+	<div>video</div>
+</template>
 
 <style lang="scss" scoped></style>

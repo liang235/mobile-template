@@ -9,6 +9,7 @@ import createAutoImport from './unplugin-auto-import'
 import createComponents from './unplugin-vue-components'
 import createConsole from './unplugin-turbo-console'
 import createSvgIcon from './vite-plugin-svg-icons'
+import createMock from './vite-plugin-fake-server'
 import createCompression from './vite-plugin-compression'
 
 export default function createVitePlugins(viteEnv, isBuild = false) {
@@ -21,6 +22,7 @@ export default function createVitePlugins(viteEnv, isBuild = false) {
 	vitePlugins.push(createComponents())
 	vitePlugins.push(createConsole())
 	vitePlugins.push(createSvgIcon())
+	vitePlugins.push(createMock(viteEnv, isBuild))
 	vitePlugins.push(createCompression())
 
 	return vitePlugins

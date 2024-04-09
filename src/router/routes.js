@@ -1,11 +1,11 @@
 // 固定路由（默认路由）
 const constantRoutes = [
 	{
-		path: '/login',
-		name: 'login',
-		component: () => import('@/views/login/index.vue'),
+		path: '/:all(.*)*',
+		name: 'notFound',
+		component: () => import('@/views/error/404.vue'),
 		meta: {
-			title: '登录',
+			title: '找不到页面',
 		},
 	},
 ]

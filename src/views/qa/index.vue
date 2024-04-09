@@ -4,6 +4,8 @@ defineOptions({
 })
 </script>
 
-<template>qa</template>
+<template>
+	<div>qa</div>
+</template>
 
 <style lang="scss" scoped></style>
