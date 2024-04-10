@@ -3,7 +3,7 @@ import qs from 'qs'
 
 // 创建一个 axios 实例
 const service = axios.create({
-	baseURL: import.meta.env.VITE_BASE_URL, // 请求地址
+	baseURL: import.meta.env.VITE_API_URL, // 请求地址
 	timeout: 10000, // 请求时长
 	responseType: 'json', // 浏览器将要响应的数据类型
 	/**

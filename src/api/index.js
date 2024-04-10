@@ -16,4 +16,11 @@ export default {
 			method: 'post',
 		})
 	},
+
+	getTopInfosAll() {
+		return request({
+			url: '/SY_COMM_INFOS.getTopInfosAll.do',
+			method: 'post',
+		})
+	},
 }
