@@ -6,11 +6,14 @@ const service = axios.create({
 	baseURL: import.meta.env.VITE_API_URL, // 请求地址
 	timeout: 10000, // 请求时长
 	responseType: 'json', // 浏览器将要响应的数据类型
+	Authorization:
+		'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcxMjcxMzU1MDA2NywiZXhwIjoxNzEyNzk5OTUwMDY3LCJqdGkiOiJucXVYZlBmR0h5cXBLS0ZQcG91RCIsInVzZXJuYW1lIjoiYWRtaW4ifQ.QF7LLldovTZhyfkxg-JBvZAd_iPP9BOwmzEw1d_J2pY',
 	/**
 	 * 请求参数进行字符串化处理
 	 * 修复 get 请求传递嵌套对象或数组时无法正常编码问题
 	 * https://www.npmjs.com/package/qs
 	 */
+	JSESSIONID: 'abcGiJ0w1vVg14zVijb7y',
 	paramsSerializer: {
 		serialize(params) {
 			return qs.stringify(params, { allowDots: true })

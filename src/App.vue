@@ -1,14 +1,17 @@
 <script setup>
-import useAPi from '@/api/index'
+import useApi from '@/api/index'
 
 onMounted(() => {
-	useAPi.getMobileLoginUser().then((res) => {
+	useApi.getMobileLoginUser().then((res) => {
 		console.log(res)
 	})
-	useAPi.getVars().then((res) => {
+	useApi.getVars().then((res) => {
 		console.log(res)
 	})
-	useAPi.getTopInfosAll().then((res) => {
+	useApi.getTopInfosAll().then((res) => {
+		console.log(res)
+	})
+	useApi.getOA().then((res) => {
 		console.log(res)
 	})
 })
